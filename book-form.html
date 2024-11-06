@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title> Book Information Form </title>
+    <link rel = "stylesheet" href = "styles.css">
+
+</head>
+<body>
+<div class = "container">
+    <h1>Book Information Form</h1>
+    <!-- Form element to obtain the book information from the user, The data will be sent to 'add_book.php' using POST Method-->
+    <form action = "add_book.php" method = "POST">
+        <!-- Input field for the book name-->
+        <label for = "bookname"> Book Name:</label>
+        <input type = "text" id="bookname" name = "bookname" required><br>
+        <!-- Input field for the author-->
+        <label for = "author">Author:</label>
+        <input type = "text" id = "author" name = "author" required><br>
+        <!-- Input field for the genre-->
+        <label for = "genre">Genre:</label>
+        <input type = "text" id = "genre" name = "genre" required><br>
+        <!-- Input field for the year it was published-->
+        <label for = "published_year">Published Year:</label>
+        <input type="number" id="published_year" name="published_year" required><br>
+        <input type="submit" value="Add Book">
+    </form>
+    <!--Link to see the books-->
+    <a href = "display_book.php">View Book List </a>
+    <!--Image from minecraft enchantment library-->
+    <img src="https://i.redd.it/my-enchanted-library-built-in-survival-v0-283d4y339qbb1.jpg?width=3840&format=pjpg&auto=webp&s=7f678680bb5dba65659760bd22297238b749f46c" alt="Enchanted Library">
+
+
+ 
+</div>
+</body>
+</html>
