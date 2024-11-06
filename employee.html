@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <meta charset = "UTF-8">
+    <title> Employee Registration Form</title>
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+    <div class = "container">
+        <!--Main heading for the form-->
+        <h1> Employee Registration</h1>
+        <!--Form setup to post data to 'validate_employee.php' on submission-->
+        <form action = "validate_employee.php" method = "POST">
+        <label for = "first_name">First Name:</label>  
+        <!--Input field for the first name which is required-->
+        <input type = "text" id = "first_name" name = "first_name " required><br>
+        <label for = "last_name">Last Name:</label>
+        <!--Input field for the last name which is required-->
+        <input type="text" id = "last_name" name="last_name" required><br>
+        <label for = "address">Address:</label>
+        <!--Input field for the address which is required-->
+        <input type = "text" id = "address" name = "address" required><br>
+        <!--Input field for the employee ID with specific pattern requirements. It msut start 4 letters, can be upper or lower case followed by 4 digits-->
+        <label for = "employee_id">Employee ID:</label>
+        <input type = "text" id = "employee_id" name="employee_id" required pattern= "[A-Za-z]{4}[0-9]{4}"><br>
+        <!--Submit-->
+        <input type = "submit" value = "Register">
+    </form>
+    <img src="https://i.redd.it/my-enchanted-library-built-in-survival-v0-283d4y339qbb1.jpg?width=3840&format=pjpg&auto=webp&s=7f678680bb5dba65659760bd22297238b749f46c" alt="Enchanted Library">
+    </div>
+</body>
+</html>
