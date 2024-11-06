@@ -1,0 +1,48 @@
+/* This sets the default font family though the whole document */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #000000; /* UMBC black for the text color */
+}
+
+/*This styles the container class with centering and UMBC colors to the theme of the site */
+.container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #fdb515; /*UMBC Gold borders */
+    background-color: #fdb515;
+}
+
+/* Styles for all input types of text, number, and submissions */
+input[type="text"], input[type="number"], input[type="submit"] {
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #fdb515;
+    width: 80%;
+    background-color: #ffffff;
+}
+
+/*Styles for the table */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 2px solid #fdb515;
+}
+
+/* Table headers and cells within the table */
+th, td {
+    padding: 10px;
+    background-color: #fdb515;
+    border: 1px solid #000000;
+    text-align: left;
+    color: #000000;
+}
+
+/* How the picture looks */
+img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
